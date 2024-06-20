@@ -2,6 +2,8 @@ import React from 'react'
 import DashSide from './DashSide'
 import DashFooter from './DashFooter'
 import DashNav from './DashNav'
+import { Outlet } from 'react-router'
+
 
 const Dashboard = () => {
   return (
