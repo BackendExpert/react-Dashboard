@@ -12,7 +12,7 @@ const Dashboard = () => {
       {/* <DashSideTest /> */}
       <div className="flex-1 bg-[#323132]">
         <DashNav />
-        <div className="">
+        <div className="py-4 px-4">
             <Outlet />
         </div>
         <DashFooter />
