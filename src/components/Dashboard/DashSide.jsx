@@ -38,7 +38,7 @@ const DashSide = () => {
         </button>
         <div style={divStyle} className={`w-full md:w-auto md:min-h-screen  md:relative fixed overflow-auto top-0 left-0 h-full  bg-gray-800 text-white w-auto transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out`}>
            <div className="py-4 px-8">
-                <h1 className="uppercase text-xl font-semibold">jehan</h1>
+                <h1 className="uppercase text-xl font-semibold tracking-[0.6em]">jehan</h1>
            </div>
            <hr className='border border-gray-500'/>
            <div className="my-4 pr-16 px-4">
