@@ -1,4 +1,7 @@
 import React from 'react'
+import DashSide from './DashSide'
+import DashFooter from './DashFooter'
+import DashNav from './DashNav'
 
 const Dashboard = () => {
   return (
