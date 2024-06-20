@@ -47,7 +47,7 @@ const DashSide = () => {
                 </div>
                 
            </div>
-           <hr className='border border-gray-500'/>
+           <hr className='border border-[#242423]'/>
            <div className="my-4 pr-16 px-4">
                 {
                     SideLink.map((side) => {
