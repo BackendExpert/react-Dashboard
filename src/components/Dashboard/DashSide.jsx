@@ -30,7 +30,7 @@ const DashSide = () => {
     ]
 
   return (
-    <div className="border-r-2 broder-blue-500">
+    <div className="">
         <button className="md:hidden fixed top-4 right-4 z-50 bg-gray-600 text-white p-2 rounded font-semibold" onClick={toggleSidebar}>
             {
                 !isOpen ? <BsList /> : <BsX />
@@ -43,11 +43,6 @@ const DashSide = () => {
                     <div className="pl-4">
                         <h1 className="mt-1 uppercase text-xl font-semibold tracking-[0.3em]">Campus</h1>
                         <p className="py-2">J.Weerasuriya</p>
-                        <div className="flex text-sm">
-                            <BsPersonFill className='h-4 w-auto'/>
-                            <p className="pl-1">Student</p>
-                        </div>
-                        
                     </div>
                 </div>
                 
