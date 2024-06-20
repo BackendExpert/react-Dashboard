@@ -17,16 +17,16 @@ const DashSide = () => {
     };
 
     const SideLink = [
-        {style: 'text-orange-500', id: 1, name: "Dashboard", link: "Home", icons: <BsSpeedometer2 />},    
-        {style: 'text-yellow-500', id: 2, name: "Leaves", link: "Leaves", icons: <BsBoxArrowDownRight />},  
-        {style: 'text-green-500', id: 3, name: "Reservation", link: "Reservation", icons: <BsTicketDetailedFill />},  
-        {style: 'text-purple-500', id: 4, name: "SRNs", link: "SRNs", icons: <BsFileTextFill />},  
-        {style: 'text-pink-500', id: 5, name: "Work Requests", link: "WorkRequests", icons: <BsHouseGearFill />},  
-        {style: 'text-red-500', id: 7, name: "GatePass", link: "GatePass", icons: <BsPassFill />},  
-        {style: 'text-blue-500', id: 8, name: "Increment", link: "Increment", icons: <BsCashStack />},  
-        {style: 'text-green-700', id: 9, name: "Vehicle", link: "Vehicle", icons: <BsCarFrontFill />},  
-        {style: 'text-yellow-800', id: 10, name: "SiteAdmin", link: "SiteAdmins", icons: <BsPersonFillLock />},  
-        {style: 'text-purple-600', id: 11, name: "Employee", link: "Employee", icons: <BsPeopleFill />},          
+        {style: 'orange-500', id: 1, name: "Dashboard", link: "Home", icons: <BsSpeedometer2 />},    
+        {style: 'yellow-500', id: 2, name: "Leaves", link: "Leaves", icons: <BsBoxArrowDownRight />},  
+        {style: 'green-500', id: 3, name: "Reservation", link: "Reservation", icons: <BsTicketDetailedFill />},  
+        {style: 'purple-500', id: 4, name: "SRNs", link: "SRNs", icons: <BsFileTextFill />},  
+        {style: 'pink-500', id: 5, name: "Work Requests", link: "WorkRequests", icons: <BsHouseGearFill />},  
+        {style: 'red-500', id: 7, name: "GatePass", link: "GatePass", icons: <BsPassFill />},  
+        {style: 'blue-500', id: 8, name: "Increment", link: "Increment", icons: <BsCashStack />},  
+        {style: 'green-500', id: 9, name: "Vehicle", link: "Vehicle", icons: <BsCarFrontFill />},  
+        {style: 'yellow-500', id: 10, name: "SiteAdmin", link: "SiteAdmins", icons: <BsPersonFillLock />},  
+        {style: 'purple-600', id: 11, name: "Employee", link: "Employee", icons: <BsPeopleFill />},          
     ]
 
   return (
@@ -47,10 +47,10 @@ const DashSide = () => {
                         return (
                             <div className="">
                                 <a href={side.link}>
-                                    <div className={`my-2 py-3 w-full cursor-pointer rounded px-4 duration-500 hover:backdrop-blur-sm hover:bg-white/10 hover:${side.style}`}>
-                                        <div className="flex">
-                                            <p className={`${side.style} text-2xl`}>{side.icons}</p>
-                                            <h1 className={`pl-2 hover:${side.style}`}>{side.name}</h1>
+                                    <div className={`my-2 py-3 w-full cursor-pointer rounded px-4 duration-500 hover:backdrop-blur-sm hover:bg-white/10 hover:text-${side.style}`}>
+                                        <div className={`flex`}>
+                                            <p className={`text-${side.style} text-2xl`}>{side.icons}</p>
+                                            <h1 className={`pl-2 `}>{side.name}</h1>
                                         </div>
                                     </div>
                                 </a>
