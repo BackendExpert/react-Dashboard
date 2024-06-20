@@ -36,24 +36,22 @@ const DashSide = () => {
                 !isOpen ? <BsList /> : <BsX />
             }
         </button>
-        <div style={divStyle} className={`w-full md:w-auto md:min-h-screen md:pr-16 md:relative fixed overflow-auto top-0 left-0 h-full px-4 bg-gray-800 text-white w-auto transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out`}>
-           <div className="py-4">
-                <h1 className="">J. Weerasuriya</h1>
+        <div style={divStyle} className={`w-full md:w-auto md:min-h-screen  md:relative fixed overflow-auto top-0 left-0 h-full  bg-gray-800 text-white w-auto transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out`}>
+           <div className="py-4 px-8">
+                <h1 className="uppercase text-xl font-semibold">jehan</h1>
            </div>
-
-           <div className="my-4">
+           <hr className='border border-gray-500'/>
+           <div className="my-4 pr-16 px-4">
                 {
                     SideLink.map((side) => {
                         return (
                             <div className="">
-                                <a href={side.link}>
-                                    <div className={`my-2 py-3 w-full cursor-pointer rounded px-4 duration-500 hover:backdrop-blur-sm hover:bg-white/10 hover:text-${side.style}`}>
-                                        <div className={`flex`}>
-                                            <p className={`text-${side.style} text-2xl`}>{side.icons}</p>
-                                            <h1 className={`pl-2 `}>{side.name}</h1>
-                                        </div>
+                                <div className={`w-full my-2 py-3 px-2 rounded cursor-pointer duration-500 hover:backdrop-blur-sm hover:bg-white/10`}>
+                                    <div className="flex">
+                                        <p className={`text-2xl text-${side.style} `}>{side.icons}</p>
+                                        <p className="pl-2">{side.name}</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         )
                     })
