@@ -46,7 +46,7 @@ const DashSide = () => {
                     SideLink.map((side) => {
                         return (
                             <div className="">
-                                <a href="">
+                                <a href={side.link}>
                                     <div className="my-2 py-3 w-full cursor-pointer duration-500 hover:backdrop-blur-sm rounded hover:bg-white/10 px-4">
                                         <div className="flex">
                                             <p className={`${side.style} text-2xl`}>{side.icons}</p>
