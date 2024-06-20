@@ -6,9 +6,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Dashboard" element={<Dashboard />} >
-          <Route path="Employee" element={<Employee />} />
-        
+        <Route path="/Dashboard/" element={<Dashboard /> }> 
+           <Route path='Employee' element={<Employee /> } /> 
         </Route>
       </Routes>
     </BrowserRouter>
