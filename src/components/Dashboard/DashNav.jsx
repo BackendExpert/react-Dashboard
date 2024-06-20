@@ -2,7 +2,7 @@ import React from 'react'
 
 const DashNav = () => {
   return (
-    <div className='bg-slate-900 text-white py-5 px-4'>
+    <div className='bg-[#191819] text-white py-5 px-4'>
         ABC Campus
     </div>
   )

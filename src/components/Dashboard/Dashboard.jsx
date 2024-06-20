@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div className="flex">
       <DashSide />
       {/* <DashSideTest /> */}
-      <div className="flex-1 bg-gray-200">
+      <div className="flex-1 bg-[#323132]">
         <DashNav />
         <Outlet />
         <DashFooter />
