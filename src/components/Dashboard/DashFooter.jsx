@@ -2,7 +2,9 @@ import React from 'react'
 
 const DashFooter = () => {
   return (
-    <div>DashFooter</div>
+    <div className='text-gray-400 py-5 px-4 text-sm'>
+        Designed and Developed By : <a href=""><span className="text-blue-500">Jehankandy</span></a>
+    </div>
   )
 }
 
