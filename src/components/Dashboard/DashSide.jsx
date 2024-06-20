@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import DashSideImag from '../../assets/DashSide.jpg'
-import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill } from "react-icons/bs";
+import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill, BsPerson, BsPersonFill } from "react-icons/bs";
 
 
 const DashSide = () => {
@@ -43,6 +43,11 @@ const DashSide = () => {
                     <div className="pl-4">
                         <h1 className="mt-1 uppercase text-xl font-semibold tracking-[0.3em]">Campus</h1>
                         <p className="py-2">J.Weerasuriya</p>
+                        <div className="flex text-sm">
+                            <BsPersonFill className='h-4 w-auto'/>
+                            <p className="pl-1">Student</p>
+                        </div>
+                        
                     </div>
                 </div>
                 
