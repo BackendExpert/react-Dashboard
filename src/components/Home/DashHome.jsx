@@ -13,12 +13,12 @@ const dashMenu = [
   return (
     <div>
         <div className="">
-            <h1 className="text-xl font-semibold pb-4 text-gray-300">Dashboard</h1>
+            <h1 className="text-xl font-semibold pb-4 text-gray-500">Dashboard</h1>
             <div className="md:grid grid-cols-4 gap-4">
                 {
                     dashMenu.map((dash) => {
                         return (
-                            <div className={`md:my-0 my-2 bg-neutral-900 text-white px-4 py-8 rounded border-l-2 shadow-md shadow-red ${dash.borderStyle}`}>
+                            <div className={`md:my-0 my-2 bg-gray-200 text-white px-4 py-8 rounded border-l-4 drop-shadow-md  shadow-red ${dash.borderStyle}`}>
                                 <div className="flex justify-between">
                                     <div className="">
                                         <h1 className="text-3xl font-semibold">{dash.value}</h1>
