@@ -52,7 +52,7 @@ const DashSide = () => {
                 {
                     SideLink.map((side) => {
                         return (
-                            <a href="">
+                            <a href={side.link}>
                                 <div className="">
                                     <div className={`w-full my-2 py-3 px-2 rounded cursor-pointer duration-500 hover:backdrop-blur-sm hover:bg-white/10`}>
                                         <div className="flex">
