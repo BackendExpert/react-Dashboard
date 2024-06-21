@@ -18,7 +18,7 @@ const dashMenu = [
                 {
                     dashMenu.map((dash) => {
                         return (
-                            <div className={`md:my-0 my-2 ${dash.bgstyle} text-white px-4 py-8 rounded border-l-4 shadow-md shadow-red ${dash.borderStyle}`}>
+                            <div className={`md:my-0 my-2 ${dash.bgstyle} text-white px-4 py-8 rounded border-l-4 shadow-lg shadow-red ${dash.borderStyle}`}>
                                 <div className="flex justify-between">
                                     <div className="">
                                         <h1 className={`text-3xl font-semibold text-${dash.style}`}>{dash.value}</h1>
