@@ -60,6 +60,9 @@ const DashSide = () => {
                             }                            
                         </p>
                     </div>
+                    <div className={`${!UserNameDropDown ? 'hidden' : 'invisble'} absolute md:right-16 right-8 bg-gray-700 py-4 px-8 mt-[-20px] overflow-auto transform translate-x-0 transition-transform duration-500 rounded shadow-md ease-in-out`}>
+                        Hi all
+                    </div>
                 </div>
                 
            </div>
