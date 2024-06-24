@@ -46,24 +46,25 @@ const DashSide = () => {
                     <p className="text-blue-600 pl-4 pt-2"><BsMortarboard className='h-10 w-auto'/></p>
                     <div className="pl-4">
                         <h1 className="mt-1 uppercase text-xl font-semibold tracking-[0.3em]">Campus</h1>
-                        <p className="py-2">J.Weerasuriya</p>
+                        <p className="py-2 md:block hidden">J.Weerasuriya</p>
+                        <div className="cursor-pointer mt-2 md:hidden block" >
+                            <div className="flex" onClick={toggleUserDropDown}>
+                                <BsPersonCircle className='text-xl'/>
+                                <p className="ml-2">jehankandy</p>
+                                <p className="duration-500" >
+                                    {
+                                        !UserNameDropDown ? <BsCaretDownFill className='mt-1 ml-2'/> : <BsCaretUpFill className='mt-1 ml-2'/>
+                                    }                            
+                                </p>
+                            </div>
+                            <div className={`${!UserNameDropDown ? 'hidden' : 'invisble'} mx-[-12px] w-auto right-2 left-2 bg-gray-700 py-4 px-8 mt-[10px] transform translate-x-0 transition-transform duration-500 rounded shadow-md ease-in-out`}>
+                               <p className="text-red-500 flex"><BsPower className='text-xl'/> <p className="pl-2">Logout</p></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="mx-8 cursor-pointer" onClick={toggleUserDropDown}>
-                    <div className="flex">
-                        <BsPersonCircle className='text-xl'/>
-                        <p className="ml-2">jehankandy</p>
-                        <p className="duration-500" >
-                            {
-                                !UserNameDropDown ? <BsCaretDownFill className='mt-1 ml-2'/> : <BsCaretUpFill className='mt-1 ml-2'/>
-                            }                            
-                        </p>
-                    </div>
-                    <div className={`${!UserNameDropDown ? 'hidden' : 'invisble'} absolute md:right-16 right-8 bg-gray-700 py-4 px-8 mt-[-20px] overflow-auto transform translate-x-0 transition-transform duration-500 rounded shadow-md ease-in-out`}>
-                        Hi all
-                    </div>
-                </div>
+
                 
            </div>
            <hr className='border border-[#242423]'/>
