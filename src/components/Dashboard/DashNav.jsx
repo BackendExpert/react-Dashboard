@@ -8,7 +8,7 @@ const DashNav = () => {
               ABC Campus
             </div>
             <div className="">
-              jehankandy
+
             </div>
         </div>
     </div>
