@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { BsChevronCompactDown, BsChevronDown, BsPersonCircle } from 'react-icons/bs'
+import { BsChevronCompactDown, BsChevronDown, BsChevronUp, BsPersonCircle } from 'react-icons/bs'
 
 const DashNav = () => {
-    const {DropDown, SetDropDown} = useState(flase)
-    const toggleDropDow = () => {
-      SetDropDown(!DropDown)
+    const [UserDropDown, SetUserDropDown] = useState(false)
+    const toggleDropDown = () => {
+      SetUserDropDown(!UserDropDown)
     }
 
   return (
@@ -14,13 +14,17 @@ const DashNav = () => {
               ABC Campus
             </div>
             <div className="md:block hidden">
-              <div className="flex">
+              <div className="flex cursor-pointer" onClick={toggleDropDown}>
                 <BsPersonCircle className='text-2xl'/> 
                 <p className="pl-2">JehanKandy</p>
                 <p className="">
-                  <BsChevronDown className='pl-2 text-xl font-bold'/>
-
+                  {
+                    !UserDropDown ? <BsChevronDown className='pl-2 text-xl font-bold'/> : <BsChevronUp className='pl-2 text-xl font-bold'/>
+                  }
                 </p>
+              </div>
+              <div className="">
+                
               </div>
             </div>
         </div>
