@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import DashSideImag from '../../assets/DashSide.jpg'
-import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill, BsPerson, BsPersonFill } from "react-icons/bs";
+import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill, BsPerson, BsPersonFill, BsPersonCircle } from "react-icons/bs";
 
 
 const DashSide = () => {
@@ -29,6 +29,8 @@ const DashSide = () => {
         {style: 'text-purple-600', id: 11, name: "Employee", link: "Employee", icons: <BsPeopleFill />},          
     ]
 
+    const [UserNameDropDown, SetUserNameDropDown] = useState();
+
   return (
     <div className="">
         <button className="md:hidden fixed top-4 right-4 z-50 bg-gray-600 text-white p-2 rounded font-semibold" onClick={toggleSidebar}>
@@ -43,6 +45,16 @@ const DashSide = () => {
                     <div className="pl-4">
                         <h1 className="mt-1 uppercase text-xl font-semibold tracking-[0.3em]">Campus</h1>
                         <p className="py-2">J.Weerasuriya</p>
+                    </div>
+                </div>
+
+                <div className="mx-8">
+                    <div className="flex">
+                        <BsPersonCircle className='text-xl'/>
+                        <p className="ml-2">jehankandy</p>
+                        <p className="">
+                            <BsCaretDownFill className='mt-1 ml-2'/>
+                        </p>
                     </div>
                 </div>
                 
