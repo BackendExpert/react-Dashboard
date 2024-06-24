@@ -31,7 +31,6 @@ const DashNav = () => {
             <p className="py-2 px-4 flex text-red-500"><BsPower className='text-xl'/> <p className="pl-2">LogOut</p></p>
           </div>
         </div>
-
     </div>
   )
 }
