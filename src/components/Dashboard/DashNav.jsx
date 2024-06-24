@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsPersonCircle } from 'react-icons/bs'
+import { BsChevronCompactDown, BsChevronDown, BsPersonCircle } from 'react-icons/bs'
 
 const DashNav = () => {
   return (
@@ -9,7 +9,14 @@ const DashNav = () => {
               ABC Campus
             </div>
             <div className="md:block hidden">
-              <BsPersonCircle className='text-2xl'/>
+              <div className="flex">
+                <BsPersonCircle className='text-2xl'/> 
+                <p className="pl-2">JehanKandy</p>
+                <p className="">
+
+                  <BsChevronDown className='pl-2 text-xl font-bold'/>
+                </p>
+              </div>
             </div>
         </div>
     </div>
