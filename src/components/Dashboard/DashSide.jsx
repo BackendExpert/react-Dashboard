@@ -58,8 +58,8 @@ const DashSide = () => {
                                 </p>
                             </div>
                             <div className={`${!UserNameDropDown ? 'hidden' : 'block'} w-full bg-none py-4 px-8 transform transition-transform duration-500 rounded ease-in-out`}>
-                                <p className="text-white py-2 flex"><BsPersonGear className='text-xl'/> <p className="pl-2">My Profile</p></p>
-                                <p className="text-red-500 flex"><BsPower className='text-xl'/> <p className="pl-2">Logout</p></p>
+                                <p className="text-white flex"><BsPersonGear className='text-xl'/> <p className="pl-2">My Profile</p></p>
+                                <p className="text-red-500 py-2 flex"><BsPower className='text-xl'/> <p className="pl-2">Logout</p></p>
                             </div>
                         </div>
                     </div>
