@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import DashSideImag from '../../assets/DashSide.jpg'
-import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill, BsPerson, BsPersonFill, BsPersonCircle } from "react-icons/bs";
+import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill, BsPerson, BsPersonFill, BsPersonCircle, BsCaretUpFill } from "react-icons/bs";
 
 
 const DashSide = () => {
@@ -29,8 +29,10 @@ const DashSide = () => {
         {style: 'text-purple-600', id: 11, name: "Employee", link: "Employee", icons: <BsPeopleFill />},          
     ]
 
-    const [UserNameDropDown, SetUserNameDropDown] = useState();
-
+    const [UserNameDropDown, SetUserNameDropDown] = useState(false);
+    const toggleUserDropDown = () => {
+        SetUserNameDropDown(!UserNameDropDown);
+    };
   return (
     <div className="">
         <button className="md:hidden fixed top-4 right-4 z-50 bg-gray-600 text-white p-2 rounded font-semibold" onClick={toggleSidebar}>
@@ -48,12 +50,14 @@ const DashSide = () => {
                     </div>
                 </div>
 
-                <div className="mx-8">
+                <div className="mx-8 cursor-pointer" onClick={toggleUserDropDown}>
                     <div className="flex">
                         <BsPersonCircle className='text-xl'/>
                         <p className="ml-2">jehankandy</p>
-                        <p className="">
-                            <BsCaretDownFill className='mt-1 ml-2'/>
+                        <p className="duration-500" >
+                            {
+                                !UserNameDropDown ? <BsCaretDownFill className='mt-1 ml-2'/> : <BsCaretUpFill className='mt-1 ml-2'/>
+                            }                            
                         </p>
                     </div>
                 </div>
