@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import DashSideImag from '../../assets/DashSide.jpg'
-import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill, BsPerson, BsPersonFill, BsPersonCircle, BsCaretUpFill } from "react-icons/bs";
+import { BsBackpack2Fill, BsSpeedometer2, BsPersonVideo3, BsFileEarmarkText, BsPeople, BsPersonGear, BsPower, BsBook, BsPatchCheck, BsBuilding, BsFile, BsMortarboard, BsList, BsX, BsCalendarEvent, BsBell, BsFilesAlt, BsFileText, BsCashCoin, BsMortarboardFill, BsCaretDownFill, BsBoxArrowDownRight, BsTicketDetailedFill, BsFileTextFill, BsHouseGearFill, BsPassFill, BsCashStack, BsCarFrontFill, BsPersonArmsUp, BsPersonFillLock, BsBuildingFill, BsPeopleFill, BsPerson, BsPersonFill, BsPersonCircle, BsCaretUpFill, BsPersonWorkspace } from "react-icons/bs";
 
 
 const DashSide = () => {
@@ -57,8 +57,9 @@ const DashSide = () => {
                                     }                            
                                 </p>
                             </div>
-                            <div className={`${!UserNameDropDown ? 'hidden' : 'invisble'} mx-[-12px] w-auto right-2 left-2 bg-gray-700 py-4 px-8 mt-[10px] transform translate-x-0 transition-transform duration-500 rounded shadow-md ease-in-out`}>
-                               <p className="text-red-500 flex"><BsPower className='text-xl'/> <p className="pl-2">Logout</p></p>
+                            <div className={`${!UserNameDropDown ? 'hidden' : 'block'} w-full bg-none py-4 px-8 transform transition-transform duration-500 rounded ease-in-out`}>
+                                <p className="text-red-500 flex"><BsPower className='text-xl'/> <p className="pl-2">Logout</p></p>
+                                <p className="text-white py-2 flex"><BsPersonGear className='text-xl'/> <p className="pl-2">My Data</p></p>
                             </div>
                         </div>
                     </div>
